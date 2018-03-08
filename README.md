@@ -11,7 +11,7 @@ Your project directory structure should look like this
   |  |
   |  +--+ assessment/
   |     |
-  |     +--+ assessment-test/
+  |     +--+ test-sandri/
   |        |
   |        +--+ main.go
   |           + model/
@@ -45,9 +45,9 @@ Under `$GOPATH`, do the following command :
 
 ## Running Application
   ```
-  cd to $GOPATH/src/assessment/assessment-test
+  cd to $GOPATH/src/assessment/test-sandri
   go build
-  nohup ./assessment-test &
+  nohup ./test-sandri &
   if you want to kill the process, type lsof -i :8080
   kill PID_NUMBER
   ```
