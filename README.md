@@ -9,15 +9,14 @@ Your project directory structure should look like this
   |
   +--+ src/
   |  |
-  |  +--+ assessment/
+  |  +--+ test-sandri/
   |     |
-  |     +--+ test-sandri/
-  |        |
-  |        +--+ main.go
-  |           + model/
-  |           + controller/
-  |           + view/
-  |           + ... any other source code
+  |     +--+ main.go
+  |        + model/
+  |        + controller/
+  |        + view/
+  |        + config/
+  |        + ... any other source code
   |
   |
   |
@@ -37,17 +36,15 @@ Setup Golang <https://golang.org/>
 
 Under `$GOPATH`, do the following command :
 ```
-  mkdir -p src/assessment/
-  cd src/assessment/
+  cd src/
   git clone <url>
-  rename directory to api-server
 ```
 
 ## Running Application
   ```
-  cd to $GOPATH/src/assessment/test-sandri
+  cd to $GOPATH/src/test-sandri
   go build
   nohup ./test-sandri &
-  if you want to kill the process, type lsof -i :8080
+  if you want to kill the process, type lsof -i :8089
   kill PID_NUMBER
   ```
